@@ -89,6 +89,6 @@ public class Complejo {
 
     @Override
     public String toString() {
-        return real+" + "+imag+"i";
+        return (imag < 0)? real+" - "+(imag*-1)+"i": real+" + "+imag+"i";
     }
 }
